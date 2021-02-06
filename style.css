@@ -1,0 +1,165 @@
+body{
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    height: 100vh;
+   
+    
+}
+
+/* roy */
+
+.wrapper{
+  width: 110rem;
+  margin: 0 auto;
+}
+header{
+  height: 150px;
+  background-color:rgba(76, 113, 159, .7);
+  width: 100%;
+  position: fixed;
+}
+.logo{
+  width: 20%;
+  float: left;
+  line-height: 100px;
+}
+.logo img{
+  max-width: 13rem;
+}
+.logo a{
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  letter-spacing: 5px;
+}
+nav{
+  float: right;
+  line-height: 150px;
+}
+nav a{
+  text-decoration: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 4px;
+  font-size: 20px;
+  margin: 20px;
+  color: white;
+}
+nav a:hover{
+  color: #e0bd80;
+}
+
+/*Grids */
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 11rem 1fr 2rem;
+    height: 100%;
+  }
+
+/* tags */
+  header{
+    grid-area: header;
+
+    padding: 1rem;
+    color: white;
+  }
+  main{
+    grid-area: main;
+    padding: 1rem;
+    font-size: 14px;
+  
+  }
+  footer{
+    grid-area: footer;
+    background-color:rgba(76, 113, 159, .7);
+    color: whitesmoke;
+  }
+
+ table{
+   
+   width: 100%;
+ }
+
+/* class */
+
+  .row{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .row.center{
+    justify-content: center;
+  }
+
+  .wrap{
+    background: #FFF;
+   
+    width: 740px;
+    border: 1px solid #CACACA;
+    box-shadow: 0 0 4px rgb(0 0 0 / 10%);
+    padding: 48px;
+  }
+  
+  .detailsSection{
+    border-top: 3px double #000000;
+    padding-top: 10px;
+  }
+  .contentSection{
+    border-bottom: 3px double #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .contentSection td{
+    padding-right:10px;
+  }
+
+  .accountingtitleSection{
+   
+    border-bottom: 1px solid #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+  }
+ 
+  .accountsSection{
+  
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .accountsSection td{
+    padding-right:10px;
+  }
+  
+
+  .contentDescription{
+    overflow: hidden; 
+    overflow-wrap: break-word; 
+    resize: none; 
+    height: 40px;
+    width: 100%;
+  }
+  
+  .contentInput{
+    display: inline-block;
+    position: relative;
+    cursor: text;
+    width: 100%;
+  }
+
+  
+
+ /* ID */ 
+  #logo{
+  width: 122px;
+  height: 102px;
+  }
+  

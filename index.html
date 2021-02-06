@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" type="text/css" href="print.css" media="print">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+    <title>VINAQUALITY</title>
+</head>
+<body>
+    <div   class="grid-container">
+
+   
+        <header class="row">
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="#"><img src="/logo.png"></a>
+                </div>
+                <nav>
+                    <a href="voucher.html">VOUCHER</a>
+                    <a href="#">PAYMENT</a>
+                    <a href="#">STATUTORY</a>
+                    <a href="#">REPORTS</a>
+                </nav>
+            </div>
+        </header>
+    <main >
+  
+        <div class="wrap" id="paper">
+            <div class="titleSection">
+                <table cellpadding="0" cellspacing="0" width="100%">
+                   
+                        <tr>
+                            <td>
+                                <div>
+                                   <img src="/img/logo.png" alt="">
+                                </div>
+                               
+                            </td>
+                            <td  valign="top">
+                               <p>VINAQUALITY</p>
+                               <p>118A Circle Road, Santos Village</p>
+                               <p>Zapote, Las Pinas City </p>
+                               <p>+632 8730442</p>
+                            </td>
+                            <td align="right" valign="top">
+                                <h1>Voucher</h1>
+                            </td>
+    
+                        </tr>                
+                 </table>    
+
+            </div>
+            <div class="detailsSection">
+                <table cellpadding="0" cellspacing="0" width="100%">
+                   
+                    <tr>
+                        <td>
+                            
+                        </td>
+                        <td align="left" valign="top" width="30%">
+                            <table>
+                                <tr>
+
+                                <td>
+                                 Invoice No.
+                                </td>
+                                <td>
+                                    <input type="text">
+                                </td>   
+                            </tr>
+                            <tr>
+
+                                <td>
+                                    Date
+                                </td>
+                                <td>
+                                    <input type="date">
+                                </td>
+                            </tr>
+                            </table>
+                        </td>
+
+                    </tr>                
+             </table>    
+            </div>
+
+            <div class="contentSection" >
+                <table cellpadding="0" cellspacing="0" width="100%">
+                   
+                    <thead>
+                        <th align="left" valign="top" >
+                            Description
+                        </th>
+                        <th align="left" valign="top" width="10%">
+                            Quantity
+                        </th>
+                        <th align="left" valign="top" width="10%">
+                            Unit Price
+                        </th>
+                        <th align="left" valign="top" width="10%">
+                            Amount
+                        </th>
+                        <th align="left" valign="top" width="10%">
+                            Tax
+                        </th>
+                        <th align="left" valign="top" width="10%">
+                            Total
+                        </th>
+                       
+                        <th align="left" valign="top" width="10%">
+                            Del
+                        </th>
+                        <th align="left" valign="top" width="10%">
+                            12% VAT
+                        </th>
+
+                    </thead>   
+                    <tbody id="content">
+                 
+                    <tr>
+                      
+                        <td align="center" valign="center">
+                            <button id ="printbtn" type="button" onclick="addData()">
+                                <i  class="fa fa-plus" aria-hidden="true"> </i>
+                            </button>
+                           
+                        </td>
+                        
+                    </tr> 
+
+                    
+                </tbody> 
+                <tfoot>
+                
+                    <tr>
+                        <td colspan="3">
+
+                        </td>
+                        <th>
+                            Subtotal
+                        </th>
+                       
+                        <td colspan="2">
+                          <p id = "Subtotal">0</p>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+
+                        </td>
+                        <th>
+                            Tax
+                        </th>
+                       
+                        <td colspan="2">
+                            <p id = "Tax">0</p> 
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+
+                        </td>
+                        <th>
+                            Total
+                        </th>
+                       
+                        <td colspan="2">
+                           <p id = "Total">0</p> 
+                        </td>
+
+                    </tr>
+    
+                </tfoot>
+
+             </table>    
+
+            </div> 
+
+            <div id = "accounting" style="display:none">
+            <div class="accountingtitleSection">
+                    <input class="accounting-title">
+            </div>
+            <div class="accountsSection">
+                <table cellpadding="0" cellspacing="0" width="100%">
+                   
+                    <thead>
+                        <th align="left" valign="top"  width="40%" >
+                            Description
+                        </th>
+                        <th align="left" valign="top"  width="20">
+                            
+                        </th>
+                        <th align="left" valign="top"  width="20">
+                            
+                        </th>
+                       
+
+                    </thead> 
+                    <tbody id="taccounts">
+
+
+                    </tbody>
+                 
+
+
+                </table>
+
+
+                
+            </div>
+             </div>
+
+            &nbsp;&nbsp;&nbsp;
+
+           
+
+        </div>
+        <button onclick="window.print()">Print this page</button>
+        <button onclick="check()">Value</button>
+        
+    </main>
+    <footer class="row center">
+            ALl Rights Reserved.
+    </footer>
+</div>
+
+</body>
+</html>
+
+
